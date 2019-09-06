@@ -63,7 +63,7 @@ android {
  */
 dependencies {
 
-     classpath "com.android.tools.build:gradle:3.4.1"
+     classpath "com.android.tools.build:gradle:3.3.2"
     // App's dependencies, including test
     compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     compile "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
