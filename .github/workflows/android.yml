@@ -1,9 +1,6 @@
 name: Android CI
 
 on: [push]
-
-
-  - name: export ANDROID_HOME="$HOME/Library/Android/sdk" && bundle install
   
 
 jobs:
@@ -17,5 +14,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - name: export ANDROID_HOME="$HOME/Library/Android/sdk" && bundle install  
     - name: Build with Gradle
       run: chmod +x gradlew && ./gradlew build
