@@ -2,9 +2,9 @@ name: Android CI
 
 on: [push]
 
-before_script:
-  - export ANDROID_HOME="$HOME/Library/Android/sdk"
-  - bundle install
+
+  - name: export ANDROID_HOME="$HOME/Library/Android/sdk" && bundle install
+  
 
 jobs:
   build:
